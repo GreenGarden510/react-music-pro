@@ -1,0 +1,11 @@
+@import '../index.module.scss';
+
+.tile {
+    background: rgba($color: $black, $alpha: 0.5);
+    padding: 20px;
+    cursor: pointer;
+
+    h2 {
+        font-size: medium;
+    }
+}

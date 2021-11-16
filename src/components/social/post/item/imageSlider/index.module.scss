@@ -1,0 +1,40 @@
+@import '$assets/scss/socialmedia.scss';
+
+.imageWrapper {
+    min-width: 200px;
+
+    img {
+        object-fit: contain;
+        height: 300px;
+        width: 100%;
+    }
+}
+
+.slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+    div {
+    }
+
+    .left {
+        position: absolute;
+        transition: all 0.3s ease-in;
+        left: -100vw;
+        top: 0;
+    }
+
+    .active {
+        position: relative;
+        transition: all 0.3s ease-out;
+    }
+
+    .right {
+        position: absolute;
+        transition: all 0.3s ease-in;
+        top: 0;
+        right: 100vw;
+    }
+}

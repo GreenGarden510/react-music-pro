@@ -1,0 +1,65 @@
+@import '$assets/scss/socialmedia.scss';
+
+.wrapper {
+    background: rgba(0,0,0,0.9);
+    border-radius: 10px;
+}
+
+.input {
+    background: rgba(0,0,0,0.3);
+    border: 1px solid grey;
+    border-radius: 9999px;
+    padding: 10px 10px;
+    color: grey;
+
+    input {
+        background: transparent;
+        border: none;
+
+        &:focus {
+            outline: none;
+            caret-color: grey;
+        }
+    }
+
+    &:focus-within {
+        border-color: rgba($accent-color, 0.7);
+    }
+}
+
+.createPostHeader {
+    border-bottom: solid 1px grey;
+}
+
+.inputBase {
+    background: rgba(0,0,0,0.3);
+    border: 1px solid grey;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 10px;
+    color: grey;
+    &:focus {
+        outline: none;
+        caret-color: grey;
+        border-color: rgba($accent-color, 0.7);
+    }
+}
+
+.pills > div {
+    margin-bottom: 10px;
+}
+
+.iconPill {
+    background: rgba(255,255,255, 0.1);
+    border-radius: 9999px;
+    cursor: pointer;
+    color: rgba(#ffffff, 0.8);
+
+    &:hover {
+        background: $primary-color;
+    }
+
+    &.active {
+        background: $primary-color;
+    }
+}

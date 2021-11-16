@@ -1,0 +1,22 @@
+@import '$assets/scss/main.scss';
+
+.mkBtn {
+    height: 40px;
+    border-radius: 42px;
+    min-width: 140px;
+    border: 0;
+    background-color: $tertiary-blue;
+    color: $white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0rem 1rem;
+    &:focus {
+        outline: none;
+    }
+    margin-top: 7px;
+}
+
+.mkBtnStretch {
+    width: 100%;
+}

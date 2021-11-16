@@ -1,0 +1,49 @@
+@import '$assets/scss/main.scss';
+.wrapper {
+    z-index: 9998;
+}
+
+.title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: $title;
+    color: $secondary-green;
+}
+
+// .panel {
+//     flex: 1;
+// }
+
+.menuMobile {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    height: 0;
+    width: 100%;
+    z-index: $z-index-lifter;
+    background-color: $white;
+    overflow: hidden;
+    padding: 0 1rem;
+    right: 0;
+    width: 30%;
+    margin-left: auto;
+    margin-right: 10px;
+    transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.3s cubic-bezier(0.77, 0.2, 0.05, 1.0), height 0.5s ease;
+    @media screen and (max-width: 768px) {
+        min-width: 119px;
+        background-color: #818181;
+        border-radius: 20px;
+    }
+}
+
+.menuActive {
+    height: 200px;
+    @media screen and (max-width: 768px) {
+        height: 108px;
+        min-width: 119px;
+        background-color: #818181;
+        border-radius: 20px;
+    }
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

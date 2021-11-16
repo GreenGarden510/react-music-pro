@@ -1,0 +1,16 @@
+@import '$assets/scss/main.scss';
+.progress-bar {
+    height: 10px;
+    background-color: #8103FC !important;
+}
+
+.progress {
+    flex: 1;
+    height: 10px !important;
+    background-color: #191919 !important;
+}
+
+.progress-wrapper {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}

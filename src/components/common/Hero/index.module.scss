@@ -1,0 +1,11 @@
+@import '$assets/scss/main.scss';
+.heroHeading {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: $heading;
+    color: $primary-gray;
+}
+
+.heroSubHeading {
+    color: $secondary-gray;
+}

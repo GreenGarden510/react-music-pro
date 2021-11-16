@@ -1,0 +1,36 @@
+@import '$assets/scss/socialmedia.scss';
+
+.userAvatar {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+
+    span:hover {
+        color: $accent-color;
+    }
+
+    & > div {
+        position: absolute;
+        right: 0;
+        padding: 5px 10px;
+        background: rgba(#ffffff, 0.1);
+
+        strong {
+            font-size: 12px;
+            white-space: nowrap;
+            margin: 0;
+            font-weight: 300;
+            cursor: pointer;
+
+            &:hover {
+                color: $accent-color;
+            }
+        }
+    }
+}

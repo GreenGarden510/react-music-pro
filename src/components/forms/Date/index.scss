@@ -1,0 +1,17 @@
+.custom-date {
+    height: 40px;
+    margin: 0 5px 2px 0;
+    padding: 0 10px;
+    width: 100%;
+    background-color: #818181;
+    color: white;
+    border: 1px solid white;
+}
+
+.isInvalid {
+    border-color: red;
+}
+
+p.invalidFeedback {
+    color: red;
+}

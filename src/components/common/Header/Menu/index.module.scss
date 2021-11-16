@@ -1,0 +1,23 @@
+@import '$assets/scss/main.scss';
+.menuBtn {
+    background: transparent;
+    border: 0;
+    justify-content: center;
+    margin: 0 1.3rem;
+    &:focus {
+        outline: none;
+    }
+}
+
+.menuText {
+    font-family: Poppins;
+    color: #FC0135;
+    font-size: 18px;
+}
+
+.activeDot {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: #FC0135;
+}

@@ -1,0 +1,73 @@
+@import '$assets/scss/socialmedia.scss';
+
+.wrapper {
+
+}
+
+.list {
+    overflow-x: auto;
+    .itemWrapper {
+        position: relative;
+        margin-right: 10px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            height: 10px;
+            background: red;
+        }
+        
+        .thumb {
+            position: absolute;
+            height: 45px;
+            width: 45px;
+            object-fit: cover;
+            border-radius: 100%;
+            border: solid 1px #ffffff;
+            top: 5px;
+            left: 5px;
+        }
+    
+        .story {
+            height: 200px;
+            width: 120px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    
+        .name {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            border-radius: 0 0 5px 5px;
+            background: rgba(0,0,0,0.75);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .createButton {
+                position: absolute;
+                background: $primary-color;
+                border-radius: 9999px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 30px;
+                width: 30px;
+                margin-top: -45px;
+                border: solid 1px #fff;
+
+                img {
+                    height: 14px;
+                }
+            }
+
+            span  {
+                color: #ffffff;
+                font-size: 12px;
+            }
+        }
+    }
+}

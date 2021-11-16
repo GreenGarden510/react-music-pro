@@ -1,0 +1,120 @@
+@import '$assets/scss/main.scss';
+.sideMenu {
+    position: relative;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    padding: 3rem 1rem 1rem 0rem;
+    overflow-y: auto;
+    overflow-x: hidden
+}
+
+//////////////////// ADD ///////////////////////
+.sideMenu::-webkit-scrollbar {
+    width: 15px;
+}
+
+.sideMenu::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.sideMenu::-webkit-scrollbar-thumb {
+    background: #333;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.sideMenu::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+.sideMenu::-webkit-scrollbar-corner {
+    background: transparent !important;
+}
+
+////////////////////// END //////////////////////
+// TODO: move typography into scss files
+.headerTitle {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: $title;
+    color: $secondary-green;
+}
+
+.sideMenusWrapper {
+    position: relative;
+    margin-top: 4rem;
+    min-height: 100vh;
+}
+
+.sideMenuItem {
+    padding: 5px 1rem;
+    margin-left: 10px;
+    color: $secondary-gray;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &.active,
+    &:hover {
+        background-color: rgba(252, 252, 252, 0.1);
+        color: $secondary-green;
+        border-radius: 7px;
+    }
+}
+
+.sidemenuItemTitleWrapper {
+    background-color: $black;
+}
+
+.sideMenuItemTitle {
+    color: white;
+    background-color: $primary-color;
+    border-radius: 7px;
+}
+
+.sideMenuItemIcon {
+    padding: 0 1rem;
+    height: 15px;
+    width: 45px;
+}
+
+.sideMenuSubtitle {
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 16px;
+    color: $white;
+    margin-left: 2rem;
+}
+
+.artistMenus {
+    margin-top: 4rem;
+}
+
+.logoWrapper {
+    background-color: black;
+    width: 220px;
+    height: 5rem;
+    top: 0;
+}
+
+.sidemenu_logo {
+    width: 100px;
+}
+
+.socialButton {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    cursor: pointer;
+    background: -webkit-linear-gradient(45deg, $primary-color, $accent-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+
+    span {
+        font-weight: 400;
+        -webkit-text-fill-color:grey;
+    }
+}

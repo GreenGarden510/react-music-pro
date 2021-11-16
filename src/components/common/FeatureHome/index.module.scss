@@ -1,0 +1,146 @@
+@import '$assets/scss/main.scss';
+.f_featureWrapper {
+    // min-height: 185px;
+    // min-width: 300px;
+    // max-width: 450px;
+    // height: 100%;
+    // margin-left: 1rem;
+    // margin-bottom: 1rem;
+    background-color: #191919;
+    box-shadow: 3px 3px 3px #111;
+    width: 200px;
+    padding: 10px 10px 5px 10px;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    height: 100%;
+}
+
+// .f_featureWrapper:before {
+//     content: " ";
+//     position: absolute;
+//     top: 5px;
+//     left: 5px;
+//     right: 5px;
+//     bottom: 5px;
+//     border: 1px solid #333;
+// }
+.f_featureContentWrapper {
+    height: 40%;
+    width: 100%;
+    bottom: 0;
+}
+
+.f_featureActionBtn {
+    height: 30px;
+}
+
+.f_featureSummary {
+    color: $white;
+    margin: 5px;
+}
+
+.f_featurePane {
+    // position: absolute;
+    z-index: $z-index-lift;
+}
+
+.f_featurePlayBtn {
+    background-color: transparent;
+    border: none;
+    &:focus {
+        outline: 0;
+    }
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+
+.f_featureHeaderWrapper {
+    position: absolute;
+    width: auto;
+    top: 0px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    border-radius: 10px 10px 0 0;
+}
+
+.f_featureHeaderWrapperTitle {
+    background-color: transparent;
+    color: $white;
+}
+
+.f_defaultFeatureAvatar {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.f_realFeatureAvater {
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 50% !important;
+}
+
+.f_menuIcon {
+    width: 15px;
+}
+
+.f_description {
+    font-size: 12px;
+    max-width: 170px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #aaa;
+}
+
+.f_bottom_icon {
+    height: 15px;
+    color: white;
+    margin-left: 10px;
+    float: right;
+}
+
+.f_fontSize10 {
+    font-size: 10px;
+}
+
+.f_fontSize12 {
+    font-size: 12px;
+}
+
+.f_hoverCursor_icon {
+    color: #2B7676;
+}
+
+.f_hoverCursor_icon:hover {
+    cursor: pointer;
+}
+
+.f_fontSize16 {
+    font-size: 16px;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    max-height: 2.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 0.5rem;
+}
+
+.f_hoverCursor {
+    color: #2B7676;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 10px;
+}
+
+.f_hoverCursor:hover {
+    cursor: pointer;
+}
+
+.views {
+    font-size: 8px;
+}

@@ -1,0 +1,115 @@
+@import '$assets/scss/socialmedia.scss';
+
+
+.wrapper {
+    background: rgba(black, 0.9);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    background: -webkit-linear-gradient(45deg, $primary-color, $accent-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.input {
+
+    background: rgba(0,0,0,0.3);
+    border: 1px solid grey;
+    border-radius: 9999px;
+    padding: 10px 10px;
+    color: grey;
+
+    input {
+        background: transparent;
+        border: none;
+
+        &:focus {
+            outline: none;
+            caret-color: grey;
+        }
+    }
+
+    &:focus-within {
+        border-color: rgba($accent-color, 0.7);
+    }
+}
+
+.profile {
+    background: rgba(0,0,0,0.3);
+    border: 1px solid grey;
+    border-radius: 9999px;
+
+    img {
+        border-radius: 100%;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.iconButton {
+    background: rgba(0,0,0,0.3);
+    border: 1px solid grey;
+    border-radius: 9999px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.iconButtonBase {
+    background: rgba(0,0,0,0.3);
+    border: 1px solid grey;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+.secondaryWrapper {
+    position: relative;
+    background: black;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 96%;
+        height: 2px;
+        background: rgb(0,212,255);
+        background: linear-gradient(90deg, $accent-color 0%, $primary-color 46%, $accent-color 100%);
+        bottom: 0;
+        left: 2%;
+        z-index: 1;
+    }
+}
+
+.secondaryMenu {
+    span {
+        margin-right: 20px;
+        padding: 10px 10px;
+        font-size: 18px;
+        
+        &.active {
+            border-bottom: 5px solid $accent-color;
+        }
+    }
+}
+
+.socialButton {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    cursor: pointer;
+    background: -webkit-linear-gradient(45deg, $primary-color, $accent-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+
+    span {
+        font-weight: 400;
+        -webkit-text-fill-color:grey;
+    }
+}

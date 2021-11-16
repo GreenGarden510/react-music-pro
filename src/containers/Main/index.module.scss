@@ -1,0 +1,68 @@
+@import '$assets/scss/main.scss';
+@import '$assets/scss/general.scss';
+.content {
+    width: 100%;
+    height: 100%;
+    background-color: #323232;
+    padding-top: 1rem;
+    overflow-x: hidden;
+}
+
+///////////////// ADD /////////////////////
+.content::-webkit-scrollbar {
+    width: 15px;
+}
+
+.content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: #333;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+.content::-webkit-scrollbar-corner {
+    background: transparent !important;
+}
+
+///////////////// END ////////////////////
+.sideMenuWrapper {
+    width: 220px;
+}
+
+.sideMenuMobile {
+    position: absolute;
+    top: 70px;
+    height: 0;
+    width: 100%;
+    z-index: $z-index-last + 10;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.3s cubic-bezier(0.77, 0.2, 0.05, 1.0), height 0.5s ease;
+}
+
+.sideMenuActive {
+    height: 100%;
+}
+
+.homeFooter {
+    position: fixed;
+    z-index: $z-index-last;
+    width: 100%;
+    bottom: 0;
+    transition: all 0.3s;
+}
+
+.hideFooter {
+    bottom: -55px;
+}
+
+.homeFooter:hover {
+    bottom: 0;
+}

@@ -1,0 +1,18 @@
+@import '$assets/scss/main.scss';
+.howItWorksFeature {
+    max-width: 420px;
+}
+
+.panel {
+    padding: 3rem 1rem;
+}
+
+.panelHeader {
+    font-size: 50px;
+    color: $white;
+    font-family: 'Montserrat';
+    @media screen and (max-width: 768px) {
+        font-size: 30px;
+        text-shadow: 1px 1px 1px black;
+    }
+}

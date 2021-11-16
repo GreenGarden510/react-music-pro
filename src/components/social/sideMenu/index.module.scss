@@ -1,0 +1,17 @@
+@import '$assets/scss/socialmedia.scss';
+
+.wrapper {
+    position: absolute;
+    background: rgba(black, 1);
+}
+
+.menu {
+    div a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    div.active {
+        background: rgba(white, 0.1)
+    }
+}

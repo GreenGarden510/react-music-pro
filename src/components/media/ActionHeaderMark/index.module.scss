@@ -1,0 +1,15 @@
+.featurePlayBtn {
+    background-color: transparent;
+    border: none;
+    &:focus {
+        outline: 0;
+    }
+}
+
+.playlistIcon {
+    width: 15px;
+}
+
+.shareIcon {
+    width: 20px;
+}

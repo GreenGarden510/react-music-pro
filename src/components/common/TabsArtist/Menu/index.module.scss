@@ -1,0 +1,31 @@
+@import '$assets/scss/main.scss';
+.tabMenu {
+    color: white;
+    font-family: Roboto;
+    font-size: $normal-text;
+    background-color: transparent;
+    border: none;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    &:focus {
+        outline: none;
+    }
+}
+
+.tabMenuActive {
+    color: #8203FC;
+    background-color: #8203FC;
+}
+
+.activeTabMenu {
+    background-color: $secondary-green;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.mobile {
+    width: 100%;
+    max-width: 360px;
+}

@@ -1,0 +1,21 @@
+<div className="foreContent row justify-content-center h-100">
+        <div className="col-md-6 col-sm-6 c-text-center position-relative">
+          <GradientBackground>
+            {/* <img src={logo} alt="" className="login_logo_icon" /> */}
+            <button className="goHome" onClick={() => dispatch(hideModal())}>
+        <img src={arrow_left} style={{ width: '12px' }} /> Home</button>
+            <h1 className="display1">Welcome Back to Mkondo</h1>
+          </GradientBackground>
+          
+        </div>
+        <div className="col-md-6 col-sm-6 z3">
+          <div className="row justify-content-center login-modal-top">
+            <div className="col-10 col-sm-10 col-md-10 mt-4">
+              
+            </div>
+          </div>
+        </div>
+        <div className="col-md-12 text-center mt-5 mb-3 display-none">
+          Copyright ©2021 Mkondo. All Rights Reserved
+        </div>
+      </div>

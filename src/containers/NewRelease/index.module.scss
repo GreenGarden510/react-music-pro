@@ -1,0 +1,26 @@
+@import '$assets/scss/main.scss';
+.homeContent {
+    padding: 0 2.5rem 5rem;
+    color: $white !important;
+}
+
+.homeTabsWrapper {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    @media screen and (max-width: 576px) {
+        text-align: center;
+    }
+}
+
+.homeHeading {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: $heading;
+    color: $secondary-green;
+}
+
+.heading {
+    font-size: 2.2rem;
+    color: $white;
+    font-family: 'Montserrat';
+}

@@ -1,0 +1,12 @@
+.wrapper {
+    color: white;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    img {
+        display: inline-block;
+    }
+}
+
+.iconButton {
+    cursor: pointer;
+}

@@ -1,0 +1,162 @@
+      <RegisterBack />
+      <LoginBackBottom />
+      <button className="goHome" onClick={() => dispatch(hideModal())}><img src={arrow_left} style={{ width: '12px' }} /> Home</button>
+
+      <div className="foreContent row justify-content-center h-100">
+        <div className="col-md-6 col-sm-6 c-text-center position-relative">
+          <img src={logo} alt="" className="login_logo_icon" />
+        </div>
+        <div className="col-md-6 col-sm-6 z3">
+          <div className="row justify-content-center login-modal-top">
+            <div className="col-10 col-sm-10 col-md-10 mt-4">
+              <div className="f25 mb-4">Register</div>
+              {
+                (error || signupError)
+                && (
+                  <Alert
+                    content={error || "Failed to sign up. Try again"}
+                    type="error"
+                  />
+                )
+              }
+              {currentPage == 1 &&
+                (
+                  <div className="mb-5">
+                    <h5>Choose User Group</h5>
+                    <div className="signup-user-type">
+                      {
+                        values['userType'] == 'user' ? (
+                          <button className="group-item item-active">
+                            <img src={user_icon_white} className="w40" />
+                            <div>User</div>
+                          </button>
+                        ) : (
+                          <button className="group-item" onClick={() => handleChange('userType', 'user')}>
+                            <img src={user_icon} className="w40" />
+                            <div>User</div>
+                          </button>
+                        )
+                      }
+                      {
+                        values['userType'] == 'creator' ? (
+                          <button className="group-item item-active" >
+                            <img src={music_icon_white} className="w40" />
+                            <div>Artist</div>
+                          </button>
+                        ) : (
+                          <button className="group-item" onClick={() => handleChange('userType', 'creator')}>
+                            <img src={music_icon} className="w40" />
+                            <div>Artist</div>
+                          </button>
+                        )
+                      }
+                      {
+                        values['userType'] == 'admin' ? (
+                          <button className="group-item item-active">
+                            <img src={manager_icon_white} className="w40" />
+                            <div>Manager</div>
+                          </button>
+                        ) : (
+                          <button className="group-item" onClick={() => handleChange('userType', 'admin')}>
+                            <img src={manager_icon} className="w40" />
+                            <div>Manager</div>
+                          </button>
+                        )
+                      }
+
+                    </div>
+                    <button
+                      onClick={() => handlePage(2)}
+                      className="btn-login mt-5 mb-5"
+                    >
+                      CONTINUE
+                    </button>
+                  </div>
+                )}
+              {currentPage == 2 && (
+                <>
+                  <label class="label">Full Name</label>
+                  <TextInput
+                    name="fullName"
+                    placeholder="Fullname"
+                    value={values.fullName}
+                    onChange={handleChange}
+                  />
+                  <label class="label">Email</label>
+                  <TextInput
+                    name="email"
+                    placeholder="Email Address"
+                    type="email"
+                    value={values.email}
+                    onChange={handleChange}
+                  />
+                  <label class="label">Phone</label>
+                  <TextInput
+                    name="phoneNumber"
+                    placeholder="Phone Number"
+                    type="text"
+                    value={values.phoneNumber}
+                    onChange={handleChange}
+                  />
+                  <div className="d-flex mt-2 mb-2">
+                    <button
+                      onClick={() => handlePage(1)}
+                      className="btn-login"
+                    >
+                      Back
+                    </button>
+                    <button
+                      onClick={() => handlePage(3)}
+                      className="btn-login"
+                    >
+                      CONTINUE
+                    </button>
+
+                    <button className="gotoLogin" onClick={() => handleLogin()}>Already have an account?</button>
+                  </div>
+                  <GoogleLoginComponent />
+                  <FacebookLoginComponent />
+
+                </>
+              )}
+              {currentPage == 3 && (
+                <>
+                  <label class="label">Password</label>
+                  <TextInput
+                    name="password"
+                    placeholder="Password"
+                    type="password"
+                    value={values.password}
+                    onChange={handleChange}
+                  />
+                  <label class="label">Confirm Password</label>
+                  <TextInput
+                    name="confirmPassword"
+                    placeholder="Confirm Password"
+                    type="password"
+                    value={values.confirmPassword}
+                    onChange={handleChange}
+                  />
+                  <button
+                    onClick={() => handlePage(2)}
+                    className="btn-login"
+                  >
+                    Back
+                    </button>
+                  <button
+                    onClick={() => handlePage(4)}
+                    className="btn-login float-right"
+                  >
+                    Finish
+                  </button>
+                  <div className="mb-5" style={{ clear: "both" }}></div>
+                </>
+              )
+              }
+            </div>
+          </div>
+        </div>
+        <div className="col-md-12 text-center mt-5 mb-3 display-none">
+          Copyright ©2021 Mkondo. All Rights Reserved
+        </div>
+      </div>

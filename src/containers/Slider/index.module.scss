@@ -1,0 +1,20 @@
+@import '$assets/scss/main.scss';
+
+.container {
+    margin: 5rem $margin-top;
+    color: $white;
+}
+
+.card {
+    width: 100%;
+    background-color: rgba($color: $black, $alpha: 0.5);
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.actions a {
+    margin: 0.5rem;
+}

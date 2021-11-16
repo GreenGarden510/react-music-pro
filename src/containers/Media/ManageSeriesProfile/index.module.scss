@@ -1,0 +1,107 @@
+@import '$assets/scss/main.scss';
+
+.itemWrapper {
+    position: relative;
+
+    img.cover {
+        height: 225px;
+        width: 150px;
+        object-fit: cover;
+    }
+
+    div.deleteBtn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background-color: red;
+        border-radius: 50%;
+        display: flex;
+        height: 20px;
+        width: 20px;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 13px;
+            width: 13px;
+        }
+    }
+
+    div.details {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0, 0.1);
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        transition: all 0.3s ease-in;
+        cursor: pointer;
+
+        p {
+            margin: 0;
+            padding: 5px;
+            color: #F4F4F4;
+        }
+    }
+
+    div:hover {
+        background-color: rgba(0,0,0, 0.3);
+        transition: all 0.3s ease-out;
+    }
+
+    
+}
+
+.tileCard {
+    @include card;
+
+    .header {
+        display: flex;
+
+        .saveButton {
+            margin-left: auto;
+        }
+
+        .progress {
+            margin-left: 10px;
+            height: 30px;
+            width: 30px;
+        }
+    
+        .iconButton {
+            margin-left: 10px;
+            img {
+                height: 30px;
+                width: 30px;
+            }
+        }
+    
+        @media (max-width: 992px) { 
+            h4 {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .body {
+        height: 0;
+        overflow-y: scroll;
+        transition: all 0.3s ease-in;
+    }
+
+    .body.active {
+        height: 330px;
+        transition: all 0.3s ease-out;
+
+        @media (max-width: 992px) { 
+            height: 400px;
+        }
+    }
+}
+
+.tileCard.uploadComplete {
+    border: 1px solid $primary-color;
+}

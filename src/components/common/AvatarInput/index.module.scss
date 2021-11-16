@@ -1,0 +1,44 @@
+@import '$assets/scss/main.scss';
+.avatarInputWrapper {
+    height: 100%;
+    width: 100%;
+    border: 2px solid $secondary-gray;
+    position: relative;
+}
+
+.avatarInputWrapperImage {
+    height: 100%;
+    width: 100%;
+}
+
+.buttonWrapper {
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.avatarBtn {
+    border: 0;
+    background-color: #FC0136;
+    border-radius: 3px;
+    height: 26px;
+    padding: 0 10px;
+    color: white;
+    &:focus {
+        outline: none;
+    }
+}
+
+.avatarBtnIcon {
+    height: 30px;
+    padding: 0 5px;
+}
+
+.dragTitle {
+    font-size: 24px;
+    font-family: Roboto;
+    color: $tertiary-gray;
+    font-weight: bold;
+}

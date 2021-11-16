@@ -1,0 +1,11 @@
+@import '$assets/scss/socialmedia.scss';
+
+.videoWrapper {
+    min-width: 200px;
+
+    video {
+        object-fit: contain;
+        height: 400px;
+        width: 100%;
+    }
+}
